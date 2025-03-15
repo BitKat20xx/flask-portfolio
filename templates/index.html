@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sticky Slider Navigation (Responsive)</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"><link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Hero -->
+  <section class="et-hero-tabs">
+    <h1>LANCE'S PORTFOLIO</h1>
+    <h3>IT Graduate | Aspiring Web Developer</h3>
+    <div class="et-hero-tabs-container">
+      <a class="et-hero-tab" href="#tab-about_me">About Me</a>
+      <a class="et-hero-tab" href="#tab-project">Projects</a>
+      <a class="et-hero-tab" href="#tab-contact">Contact</a>
+      <a class="et-hero-tab" href="#tab-hobbies">Hobbies</a>
+      <a class="et-hero-tab" href="#tab-resume">Resume</a>
+      <span class="et-hero-tab-slider"></span>
+    </div>
+  </section>
+
+  <!-- Main -->
+  <main class="et-main">
+    <section class="et-slide" id="tab-about_me">
+      <h1>Lance Kirvy G. Amarles</h1>
+      <h3 style="margin: 30px; width: 50%; line-height: 200%;" >
+      Hi, I'm Lance, an IT student from Misamis Oriental, Philippines. I love coding, learning new technologies, and solving problems. My goal is to become a skilled software developer, specializing in web development and computer vision. I'm currently exploring Flask and planning to learn Selenium.
+      </h3>
+      <h2 class="Repertoire">My Programming Repertoire</h2>
+      <table class="programming-container">
+        <tr>
+          <td class="programming-item">
+            <img class="img-icon" src="{{ url_for('static', filename='images/python.svg') }}" alt="Python">
+          </td>
+          <td class="programming-item">
+            <img class="img-icon" src="{{ url_for('static', filename='images/php.svg') }}" alt="PHP">
+          </td>
+          <td class="programming-item">
+            <img class="img-icon" src="{{ url_for('static', filename='images/opencv.png') }}" alt="OpenCV">
+          </td>
+          <td class="programming-item">
+            <img class="img-icon" src="{{ url_for('static', filename='images/ultralytics.svg') }}" alt="Ultralytics">
+          </td>
+          <td class="programming-item">
+            <img class="img-icon" src="{{ url_for('static', filename='images/sql.png') }}" alt="SQL">  
+          </td>
+          <td class="programming-item">
+            <img class="img-icon" src="{{ url_for('static', filename='images/flask.svg') }}" alt="SQL">  
+          </td>
+        </tr>
+      </table>
+
+    </section>
+    
+
+    </section>
+    <section class="et-slide" id="tab-project">
+      <h1 class="Projects">Projects</h1>
+      <div style="display: flex; flex-direction: row;">
+        <div style="flex: 1;">
+          <video class="video" controls style="width: 60%; height: auto;">
+            <source src="{{ url_for('static', filename='videos/HighWayDetect.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div style="flex: 1; padding: 10px;">
+          <h2>Highway Lane Detection</h2>
+          <p>
+            This project is a Python script that uses OpenCV to detect the lanes in a video of a highway. It uses a combination of edge detection and line detection to find the lanes. The script can also detect the lines on the side of the road.
+          </p>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: row;">
+        <div style="flex: 1;">
+          <video class="video" controls style="width: 60%; height: auto;">
+            <source src="{{ url_for('static', filename='videos/10secBanger.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div style="flex: 1; padding: 10px;">
+          <h2>Highway Lane Detection</h2>
+          <p>
+            This project is a Python script that uses OpenCV to detect the lanes in a video of a highway. It uses a combination of edge detection and line detection to find the lanes. The script can also detect the lines on the side of the road.
+          </p>
+        </div>
+      </div>
+      
+
+    </section>
+    <section class="et-slide" id="tab-contact">
+      <h1>Contact</h1>
+      <h3>random stuff</h3>
+    </section>
+
+    <section class="et-slide" id="tab-hobbies">
+      <h1>Hobbies</h1>
+      <h3>something about hobbies</h3>
+    </section>
+    <section class="et-slide" id="tab-resume">
+      <h1>Resume</h1>
+      <h3>Details about my experience and skills.</h3>
+      <a href="{{ url_for('static', filename='ResumeLance.pdf') }}" download="Resume.pdf"><button class="custom-button">Download Resume</button></a>
+    </section>
+  </main>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src="{{ url_for('static', filename='/script.js') }}"></script>
+
+</body>
+</html>

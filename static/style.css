@@ -1,0 +1,166 @@
+body{
+  font-family: "Century Gothic", "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8); /* Lighter blue on hover */
+}
+
+a:visited{
+  color: #000000b7;
+}
+
+.et-hero-tabs,
+.et-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background: #eee;
+  text-align: center;
+  padding: 0 2em;
+}
+.et-hero-tabs h1,
+.et-slide h1 {
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 1rem;
+}
+.et-hero-tabs h3,
+.et-slide h3 {
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  opacity: 0.6;
+}
+
+.et-hero-tabs-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  z-index: 10;
+}
+.et-hero-tabs-container--top {
+  position: fixed;
+  top: 0;
+}
+
+.et-hero-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color: #000;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease;
+  font-size: 0.8rem;
+}
+.et-hero-tab:hover {
+  color: white;
+  background: rgba(102, 177, 241, 0.8);
+  transition: all 0.5s ease;
+}
+
+.et-hero-tab-slider {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  background: #66B1F1;
+  transition: left 0.3s ease;
+}
+
+@media (min-width: 800px) {
+  .et-hero-tabs h1,
+.et-slide h1 {
+    font-size: 3rem;
+  }
+  .et-hero-tabs h3,
+.et-slide h3 {
+    font-size: 1rem;
+  }
+
+  .et-hero-tab {
+    font-size: 1rem;
+  }
+}
+
+.programming-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.programming-container img {
+  width: 150px;  /* Adjust this size as needed */
+  height: auto; /* Keeps aspect ratio */
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.programming-container img:hover {
+  transform: scale(1.5); /* Slight zoom effect on hover */
+}
+
+.img-icon {
+  margin: 20px;
+}
+
+#ProfilePic{
+ height: auto;
+  width: 200px;
+ position: relative;
+ right: 100px;
+}
+
+.video{
+  height: auto;
+  width: 50%;
+}
+
+.custom-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: #000;
+  background: #fff;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-button:hover {
+  color: #fff;
+  background: rgba(102, 177, 241, 0.8);
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.custom-link {
+  font-family: "Century Gothic", "Lato", sans-serif;
+  font-size: auto;
+  color: #000; /* Blue color for links */
+  text-decoration: none; /* Removes the underline */
+}
+
+.custom-link:hover {
+  color: rgba(102, 177, 241, 0.8); /* Lighter blue on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+.Projects{
+  position: relative;
+  bottom: 100px
+}
+

@@ -73,3 +73,4 @@ class StickyNavigation {
 }
 
 new StickyNavigation();
+
